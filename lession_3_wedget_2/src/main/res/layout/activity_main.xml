@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoEdit"
+                android:layout_width="800dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:completionThreshold="1"
+                android:completionHintView="@layout/layout_hint"
+                android:dropDownWidth="200dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2000dp"
+                android:background="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>

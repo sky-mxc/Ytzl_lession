@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--stretchColumns   :拉伸列 想多拉伸几个列就用  ， 隔开 -->
+<!-- collapseColumns :折叠列   多折叠的话 ， 隔开-->
+<!-- shrinkColumns   :收缩列 多收缩几个  ， 隔开-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <Button />
+        <Button />
+        <Button />
+    </TableRow>
+    <TableRow>
+        <Button />
+        <!-- layout_span     :跨列   只能跨列 不能跨行-->
+        <Button
+            android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+    </TableRow>
+</TableLayout>

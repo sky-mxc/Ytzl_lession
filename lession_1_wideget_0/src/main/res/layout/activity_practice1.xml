@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.skymxc.example.lession_1_wideget.Practice1Activity">
+    <CheckBox
+        android:id="@+id/checkboxAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全选"
+        android:layout_marginBottom="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxEat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="吃饭"/>
+
+    <CheckBox
+        android:id="@+id/checkboxSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="睡觉"/>
+
+    <CheckBox
+        android:id="@+id/checkboxDadoudou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打豆豆"/>
+
+</LinearLayout>

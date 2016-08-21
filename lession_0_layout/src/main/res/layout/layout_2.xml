@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:id="@+id/topPanel"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="200dp">
+      <ImageView
+          android:id="@+id/imageTop"
+          android:layout_width="0dp"
+          android:layout_height="200dp"
+          android:layout_weight="1"
+          android:src="@mipmap/ic_launcher"/>
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="130dp"
+          android:layout_weight="2">
+
+          <TextView
+              android:id="@+id/textTopLeft"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="左边的很帅"
+              android:textSize="20sp"
+              android:layout_centerInParent="true"
+              android:layout_alignParentLeft="true"
+              android:layout_margin="10dp"/>
+
+          <TextView
+              android:id="@+id/textTopRight"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="的确"
+              android:textSize="20sp"
+              android:layout_toRightOf="@+id/textTopLeft"
+              android:layout_centerInParent="true"
+              android:textColor="@color/colorRed"/>
+
+          <TextView
+              android:id="@+id/textNumber"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="本人电话：1101010100101"
+              android:textSize="20sp"
+              android:layout_below="@+id/textTopLeft"
+              android:layout_margin="10dp"/>
+
+
+
+
+      </RelativeLayout>
+
+
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/topPanel">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="赞"
+            android:textSize="31sp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="死"
+            android:textSize="30sp"
+            android:background="#0ff"
+            android:gravity="right"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.skymxc.example.lession_2_widget_1.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroupAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioEat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="吃饭"/>
+
+        <RadioButton
+            android:id="@+id/radioSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="睡觉"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radioBean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打豆豆"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/car"
+        android:scaleType="centerCrop"/>
+
+    <!--<Spinner-->
+        <!--android:id="@+id/spacer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:entries="@array/spinner_entries"-->
+        <!--android:spinnerMode="dialog">-->
+
+    <!--</Spinner>-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+
+
+
+</LinearLayout>

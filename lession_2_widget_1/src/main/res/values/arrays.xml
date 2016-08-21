@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_entries">
+        <item>java</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+        <item>html</item>
+        <item>javaScript</item>
+        <item>sql</item>
+        <item>git</item>
+        <item>svn</item>
+        <item>cvs</item>
+    </string-array>
+</resources>
