@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context="com.skymxc.demo.lession_4_widget_3.Practice1Activity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="精选频道"
+        android:drawableLeft="@mipmap/left"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="#FBFAF8">
+            <ImageView
+                android:id="@+id/img_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/center_left"/>
+
+            <TextView
+                android:id="@+id/text_center_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_left"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="吃货探电"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:drawableLeft="@mipmap/bottom_left"
+                android:drawablePadding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_center_left"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="每天带你寻找美食"
+                android:textSize="13sp"
+                android:textColor="#908F8D"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#FBFAF8">
+            <ImageView
+                android:id="@+id/img_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/center_right"/>
+
+            <TextView
+                android:id="@+id/text_center_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_right"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="午后时光"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:drawableLeft="@mipmap/bottom_right"
+                android:drawablePadding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_center_right"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="鹿晗纪念卡冲200得200"
+                android:textSize="13sp"
+                android:textColor="#908F8D"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

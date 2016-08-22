@@ -9,13 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_3_wedget_2" />
+            <option value="$PROJECT_DIR$/lession_4_widget_3" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_3_wedget_2" />
+            <option value="$PROJECT_DIR$/lession_4_widget_3" />
           </set>
         </option>
       </GradleProjectSettings>

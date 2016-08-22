@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.skymxc.demo.lession_4_widget_3.Practice2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgaccount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/baccount"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/imgaccount"
+                android:text="余额"
+                android:textSize="10sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/textaccountnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textaccount"
+                android:layout_alignLeft="@id/textaccount"
+                android:text="0.00"
+                android:textColor="#d1d1d1"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#dfdfdf"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgcard"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/bcard"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textcardnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/imgcard"
+                android:text="我的银行卡"
+                android:textSize="10sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/textcardtnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textcardnum"
+                android:layout_alignLeft="@id/textcardnum"
+                android:text="8"
+                android:textColor="#d1d1d1"
+                android:textSize="12sp"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dfdfdf"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgtotal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/btotal"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/texttotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/imgtotal"
+                android:text="余额宝"
+                android:textSize="10sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/textotalnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texttotal"
+                android:layout_alignLeft="@id/texttotal"
+                android:text="+0.17"
+                android:textColor="#d1d1d1"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#dfdfdf"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgmoney"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/bmoney"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/imgmoney"
+                android:text="定期理财"
+                android:textSize="10sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/textmoneynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textmoney"
+                android:layout_alignLeft="@id/textmoney"
+                android:text="招财宝等"
+                android:textColor="#d1d1d1"
+                android:textSize="12sp"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dfdfdf"/>
+
+</LinearLayout>
