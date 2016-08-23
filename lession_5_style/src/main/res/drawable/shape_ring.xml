@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--环形 useLevel 必须设置为 false-->
+<!--innerRadius 内环半径 具体指-->
+<!-- thickness 环的厚度  具体值-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:shape="ring" android:useLevel="false"-->
+    <!--android:innerRadius="50dp"-->
+    <!--android:thickness="100dp">-->
+
+    <!--<solid-->
+        <!--android:color="#ccc"/>-->
+
+
+    <!--<size-->
+        <!--android:width="300dp"-->
+        <!--android:height="300dp"/>-->
+<!--</shape>-->
+
+<!--比例的方式-->
+<!--innerRadiusRatio  比例  半径= 宽度/innerRadiusRatio      300 /7  -->
+<!--thicknessRatio   比例  厚度= 宽度 /thicknessRatio       300/9-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:useLevel="false"
+    android:innerRadiusRatio="7"
+    android:thicknessRatio="9">
+
+<solid
+    android:color="#0ff"/>
+
+
+<size
+    android:width="300dp"
+    android:height="300dp"/>
+</shape>

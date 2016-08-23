@@ -1,0 +1,118 @@
+<resources>
+
+    <!--定义属性 format 是将属性格式为某一个类型-->
+    <attr name="bg" format="color" />
+
+    <!--上面的LinearLayout的背景色-->
+    <attr name="bg_top" format="color"/>
+    <!--整体的背景色-->
+    <attr name="bgOver" format="color"/>
+    <!--字体的颜色-->
+    <attr name="font" format="color"/>
+
+    <attr name="tab_font_color" format="color"/>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!---->
+        <item name="bg">#7e5858</item>
+    </style>
+
+
+    <!--白天-->
+    <style name="DayTheme" parent="AppTheme">
+        <!--头部背景色-->
+        <item name="bg_top" >#0cf</item>
+        <!--整体背景色-->
+        <item name="bgOver" >@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <!--夜间模式 四个字的颜色-->
+        <item name="font">@color/colorBlack</item>
+
+        <item name="tab_font_color">@color/select_font_radio</item>
+
+    </style>
+
+    <!--夜间模式-->
+    <style name="NightTheme" parent="AppTheme">
+        <!--头部背景色-->
+        <item name="bg_top" >@color/colorTopNeight</item>
+        <!--整体背景色-->
+        <item name="bgOver" >@color/colorOverNight</item>
+        <item name="android:windowBackground">@color/colorOverNight</item>
+        <!--夜间模式 四个字的颜色-->
+        <item name="font">@color/colorWhite</item>
+        <item name="tab_font_color">@color/select_font_night_radio</item>
+
+    </style>
+
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!---->
+        <item name="bg">@color/sleect_font_tab</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#444</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="zhengwen">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="tab" parent="zhengwen">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/bg</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+
+        <!--练习-->
+
+
+
+
+
+    <style name="radiotab">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">?attr/tab_font_color</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

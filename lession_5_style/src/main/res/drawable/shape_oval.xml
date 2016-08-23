@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">  <!--椭圆-->
+
+    <!--填充-->
+    <solid
+        android:color="#0f0"/>
+
+    <!--所在的控件为正方形时  就为圆形了-->
+    <size
+        android:width="300dp"
+        android:height="300dp"/>
+</shape>

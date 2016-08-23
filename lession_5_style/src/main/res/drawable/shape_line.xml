@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--线性-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    <!--只能使用 宽高  -->
+    <stroke
+        android:width="5dp"
+        android:color="#ccc"/>
+</shape>

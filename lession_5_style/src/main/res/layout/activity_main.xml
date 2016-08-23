@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skymxc.demo.lession_5_style.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#ccc"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            style="@style/tab"
+            android:text="消息"
+            android:drawableTop="@drawable/selector_tab_1"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/tab"
+            android:text="联系人"
+            android:drawableTop="@mipmap/ic_launcher"/>
+
+
+        <RadioButton
+            android:id="@+id/rb3"
+            style="@style/tab"
+            android:text="活动"
+            android:drawableTop="@mipmap/ic_launcher"/>
+
+
+
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/theme1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AppTheme"
+            />
+         <RadioButton
+            android:id="@+id/theme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AppTheme1"
+             android:checked="true"/>
+
+    </RadioGroup>
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape_rect"/>-->
+</RelativeLayout>

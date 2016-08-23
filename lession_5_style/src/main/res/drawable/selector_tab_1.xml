@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--当选中状态为 false的时候-->
+    <item  android:state_checked="false">
+        <shape>
+
+            <solid android:color="#0f0"/>
+            <size
+                android:width="20dp"
+                android:height="20dp"/>
+
+        </shape>
+    </item>
+
+    <!--当选中后 checked 为true when checked is true-->
+    <item android:drawable="@drawable/shape_ring" android:state_checked="true"/>
+
+    <!--按下状态 pressed    -->
+    <item android:drawable="@drawable/shape_rect" android:state_pressed="true" />
+</selector>
