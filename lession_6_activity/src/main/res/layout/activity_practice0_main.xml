@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lession_6_activity.Practice0MainActivity">
+
+    <RelativeLayout
+        style="@style/relative">
+
+        <TextView
+            style="@style/item_left"
+            android:text="头像"/>
+
+        <ImageView
+            android:id="@+id/image"
+            style="@style/item_center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/right1"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/default_img"
+            android:onClick="click"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/right1"
+            style="@style/item_right"
+            android:src="@mipmap/bg_right"/>
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/line"/>
+
+    <RelativeLayout
+        style="@style/relative">
+
+        <TextView
+            style="@style/item_left"
+            android:text="昵称"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/item_center"
+            android:layout_toLeftOf="@+id/right2"
+            android:text="张三"
+            android:clickable="true"
+            android:onClick="click"/>
+
+        <ImageView
+            android:id="@+id/right2"
+            style="@style/item_right"
+            android:src="@mipmap/bg_right"/>
+
+    </RelativeLayout>
+     <TextView
+            style="@style/line"/>
+
+    <RelativeLayout
+        style="@style/relative">
+
+        <TextView
+            style="@style/item_left"
+            android:text="电话"/>
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/item_center"
+            android:layout_toLeftOf="@+id/right3"
+            android:text="未填写"
+            android:clickable="true"
+            android:onClick="click"/>
+
+        <ImageView
+            android:id="@+id/right3"
+            style="@style/item_right"
+            android:src="@mipmap/bg_right"/>
+
+    </RelativeLayout>
+
+    <TextView
+            style="@style/line"/>
+
+    <RelativeLayout
+        style="@style/relative">
+
+        <TextView
+            style="@style/item_left"
+            android:text="邮箱"/>
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/item_center"
+            android:layout_toLeftOf="@+id/right4"
+            android:text="18768@qq.com"
+            android:clickable="true"
+            android:onClick="click"/>
+
+        <ImageView
+            android:id="@+id/right4"
+            style="@style/item_right"
+            android:src="@mipmap/bg_right"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

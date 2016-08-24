@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--按下后-->
+    <item  android:state_pressed="true"  >
+        <shape>
+
+            <size android:width="90dp"
+                android:height="30dp"/>
+
+            <gradient android:type="linear"
+                android:startColor="#300"
+                android:endColor="#39f"/>
+            <corners android:radius="10dp"/>
+        </shape>
+
+    </item>
+
+    <!--禁用-->
+    <item android:state_enabled="false">
+        <shape >
+            <size android:width="90dp"
+                android:height="30dp"/>
+            <solid android:color="#00000000"/>
+
+            <stroke android:color="#999"
+                android:width="1dp"/>
+            <corners android:radius="10dp"/>
+
+        </shape>
+    </item>
+
+    <!--可以使用-->
+    <item android:state_enabled="true" >
+        <shape android:shape="rectangle" >
+            <gradient android:type="linear"
+                android:startColor="#0ff"
+                android:endColor="#09f"/>
+
+            <size android:width="90dp"
+                android:height="30dp"/>
+
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+</selector>
