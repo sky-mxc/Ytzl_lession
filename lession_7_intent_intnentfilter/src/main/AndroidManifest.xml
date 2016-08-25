@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skymxc.demo.lession_7_intent_intnentfilter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AActivity">
+            <intent-filter>
+
+                <!-- 通常使用 包名进行开头 -->
+                <action android:name="com.skymxc.demo.lession_7_intent_intnentfilter.action.PLAY" />
+                <action android:name="com.skymxc.demo.lession_7_intent_intnentfilter.action.DRAW" />
+
+                <!-- 附加描述  至少要添加一个 default 如果自己写  一般包名前缀 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.skymxc.demo.lession_7_intent_intnentfilter.category.AAA" />
+                <category android:name="com.skymxc.demo.lession_7_intent_intnentfilter.category.DDD" />
+
+                <data android:scheme="file" />
+                <!-- 协议 -->
+                <data android:mimeType="video/*" />
+                <!-- 类型 -->
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".Practice0MainActivity">
+
+            <intent-filter>
+                <action android:name="com.skymxc.action.x1" />
+                <action android:name="com.skymxc.action.x2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.skymxc.catagory.c1" />
+                <category android:name="com.skymxc.catagory.c2" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Practice0CActivity">
+            <intent-filter>
+                <action android:name="com.skymxc.action.x1" />
+                <action android:name="com.skymxc.action.x3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.skymxc.catagory.c1" />
+                <category android:name="com.skymxc.catagory.c3" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.skymxc.action.x2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.skymxc.catagory.c2" />
+
+                <data android:scheme="http" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Practice1MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterAcvtivity"/>
+    </application>
+
+</manifest>

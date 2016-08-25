@@ -1,1 +1,1 @@
-include  ':lession_6_activity'
+include ':lession_7_activity1', ':lession_7_intent_intnentfilter'
