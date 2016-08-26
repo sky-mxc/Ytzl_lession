@@ -9,15 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_7_activity1" />
-            <option value="$PROJECT_DIR$/lession_7_intent_intnentfilter" />
+            <option value="$PROJECT_DIR$/lession_8_thread" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_7_activity1" />
-            <option value="$PROJECT_DIR$/lession_7_intent_intnentfilter" />
+            <option value="$PROJECT_DIR$/lession_8_thread" />
           </set>
         </option>
       </GradleProjectSettings>
