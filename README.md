@@ -9,4 +9,5 @@ ytzl学习代码
 - lession_5_style     样式和主题的使用，实现简单的夜间和日间模式的切换，selector美化控件，shape图形的制作，自定义属性的使用，对话框主题的使用
 - lession_6_activity  activity 声明周期的查看，使用显示intent启动另一个activity并传输数据，使用startActivityForResult()启动activity，使用onActivityResult()接受结果 
 - lession_7_activity1 activity四种启动模式测试，在清单文件中设置启动模式，查看TaskId和activity的信息
-- lession_8_intent_intentfilter  intent，intentFilter的定义 intent的隐式使用 
+- lession_7_intent_intentfilter  intent，intentFilter的定义 intent的隐式使用 
+- lession_8_Thread   Thread线程在Android中的简单使用，使用Thread下载图片，使用AsyncTask下载图片并使用进度条显示进度
