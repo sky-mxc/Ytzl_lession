@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/topPanel"
+        style="@style/top_pub">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/top_item_left_pub"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/back_left"/>
+
+        <TextView
+            style="@style/top_item_center_pub"
+            android:text="我的信息" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/panel_item_pub">
+
+        <TextView
+            style="@style/panel_item_sub_pub"
+            android:text="头像"/>
+
+        <ImageView
+            android:id="@+id/img_right"
+            style="@style/panel_item_sub_right"
+            />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_right"
+            android:src="@drawable/default_img"
+            android:clickable="true"
+            android:onClick="click"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222"/>
+
+    <RelativeLayout
+       style="@style/panel_item_pub">
+        <TextView
+            android:text="修改密码"
+            style="@style/panel_item_sub_pub"/>
+        <ImageView
+            android:id="@+id/pwd_right"
+            style="@style/panel_item_sub_right"
+            />
+        <TextView
+            android:id="@+id/update_pwd"
+            style="@style/panel_item_sub_pub"
+            android:text="中"
+            android:clickable="true"
+            android:onClick="click"
+            android:layout_toLeftOf="@id/pwd_right"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222"/>
+
+</LinearLayout>

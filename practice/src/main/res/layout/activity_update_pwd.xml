@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        style="@style/top_pub">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/top_item_left_pub"
+            android:onClick="click"
+            android:clickable="true"
+            android:src="@mipmap/back_left"/>
+
+        <TextView
+            style="@style/top_item_center_pub"
+            android:text="修改密码"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="请输入密码"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码强度"
+            android:gravity="center_vertical"/>
+
+        <RatingBar
+            android:id="@+id/rpb"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:numStars="3"
+            android:isIndicator="true"
+            android:stepSize="1"
+            android:layout_toRightOf="@id/d"
+            android:progressDrawable="@drawable/rating_drawable"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
