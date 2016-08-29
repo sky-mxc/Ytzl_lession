@@ -1,1 +1,1 @@
-include ':lession_8_thread'
+include ':practice', ':lession_10_json'

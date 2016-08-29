@@ -216,7 +216,6 @@ public class MainActivity extends AppCompatActivity {
                         }else{
                             publishProgress((int)((float)currentLen/totalLen*100));
                         }
-
                         Thread.sleep(50);
 
                         bos.write(b,0,length);

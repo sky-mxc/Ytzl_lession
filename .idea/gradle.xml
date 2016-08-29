@@ -9,13 +9,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_8_thread" />
+            <option value="$PROJECT_DIR$/lession_10_json" />
+            <option value="$PROJECT_DIR$/practice" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_8_thread" />
+            <option value="$PROJECT_DIR$/lession_10_json" />
+            <option value="$PROJECT_DIR$/practice" />
           </set>
         </option>
       </GradleProjectSettings>
