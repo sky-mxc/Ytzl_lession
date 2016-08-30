@@ -44,7 +44,7 @@ public class PersonHandler extends DefaultHandler {
      * @param uri 命名空间地址
      * @param localName 当前节点的名字 无前缀
      * @param qName 当前节点的名字 带前缀
-     * @param attributes 属性集合
+     * @param attributes 属性
      * @throws SAXException
      */
     @Override

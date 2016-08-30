@@ -45,10 +45,8 @@ public class MainActivity extends AppCompatActivity {
         try {
             //创建ＳＡＸ解析器
             SAXParser saxParser = SAXParserFactory.newInstance().newSAXParser();
-
             PersonHandler personHandler = new PersonHandler();
             saxParser.parse(getAssets().open("student.xml"),personHandler );
-
             for (Person pp :personHandler.getPersons()){
                 Log.e("Tag",pp.getName()+"==========="+pp.getId()+"==========="+pp.getAge());
             }
@@ -91,12 +89,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case XmlPullParser.START_TAG:
                         //开始读取标签
-
                         String tag = pullParser.getName();//获取到正在读取的的标签名称
                         Log.e("Tag","========START_TAG=====读取到的标签："+tag);
-
-
-
                         if (tag.equals("person")){  //读取person节点就创建一个对象 name,age  不创建
                             p = new Person();
 
@@ -106,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                             p.setId(Integer.parseInt(id));
                         }else if (tag.equals("name")){
                             String name= pullParser.nextText();  //下一个文本节点
-                            Log.e("Tag","================name:"+name+"=========p:"+p);
+                            Log.e("Tag","================name:"+name);
                             p.setName(name);
                         }else if(tag.equals("age")){
                             String age = pullParser.nextText();//获取文本
@@ -116,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                         }
                         break;
                     case XmlPullParser.END_TAG:
-
                         //结束读取标签
                         tag = pullParser.getName();//获取结束节点的名称
                         if (tag.equals("person")){

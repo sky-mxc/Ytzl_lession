@@ -10,6 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lession_10_json" />
+            <option value="$PROJECT_DIR$/lession_11_parse_xml" />
+            <option value="$PROJECT_DIR$/lession_12_listview" />
             <option value="$PROJECT_DIR$/practice" />
           </set>
         </option>
@@ -17,6 +19,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lession_10_json" />
+            <option value="$PROJECT_DIR$/lession_11_parse_xml" />
+            <option value="$PROJECT_DIR$/lession_12_listview" />
             <option value="$PROJECT_DIR$/practice" />
           </set>
         </option>
