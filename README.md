@@ -1,5 +1,5 @@
 # Ytzl_lession
-ytzl学习代码
+ytzl代码
 
 - lession_0_layout    LinearLayout ,RelativeLayout,GridLayout,FrameLayout 四中布局的使用
 - lession_1_widget_0  TextView,Button,EditText,CheckBox 控件的使用
