@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--checkableBehavior-->
+    <group android:checkableBehavior="single">
+        <!--必须有title -->
+        <item android:id="@+id/meat_animl"
+            android:title="食肉动物 (eat meat animal)"
+            android:icon="@mipmap/ic_launcher"/>
+
+        <item android:id="@+id/land_animl"
+            android:title="动物吧"
+            android:checked="true"/>
+
+        <item android:id="@+id/grass_animal"
+            android:title="食草动物 (eat grass animal)">
+            <!--子菜单-->
+            <menu>
+                <item android:id="@+id/sheep"
+                    android:title="sheep (羊)"
+                    android:icon="@mipmap/ic_launcher"/>
+                <item android:id="@+id/rabbit"
+                    android:title="rabbit(兔子)"/>
+            </menu>
+        </item>
+    </group>
+</menu>

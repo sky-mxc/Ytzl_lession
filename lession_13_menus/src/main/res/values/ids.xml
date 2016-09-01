@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用来存放id-->
+<resources>
+    <!--create a ID -->
+    <item name="mix_animl" type="id"/>
+    <item name="pig_animl" type="id"/>
+</resources>
