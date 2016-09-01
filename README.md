@@ -1,5 +1,5 @@
 # Ytzl_lession
-ytzl学习代码
+ytzl代码
 
 - lession_0_layout    LinearLayout ,RelativeLayout,GridLayout,FrameLayout 四中布局的使用
 - lession_1_widget_0  TextView,Button,EditText,CheckBox 控件的使用
@@ -11,3 +11,6 @@ ytzl学习代码
 - lession_7_activity1 activity四种启动模式测试，在清单文件中设置启动模式，查看TaskId和activity的信息
 - lession_7_intent_intentfilter  intent，intentFilter的定义 intent的隐式使用 
 - lession_8_Thread   Thread线程在Android中的简单使用，使用Thread下载图片，使用AsyncTask下载图片并使用进度条显示进度
+- lession_10_json     Android中原生json的操作，fastjson的使用 Gson的使用
+- lession_11_parse_xml   Android中的 sax解析 和 pull解析
+- lession_12_listview  ListView的使用 SimplAdapter,BaseAdapter的使用 
