@@ -6,7 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/lession_10_json/lession_10_json.iml" filepath="$PROJECT_DIR$/lession_10_json/lession_10_json.iml" />
       <module fileurl="file://$PROJECT_DIR$/lession_11_parse_xml/lession_11_parse_xml.iml" filepath="$PROJECT_DIR$/lession_11_parse_xml/lession_11_parse_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/lession_12_listview/lession_12_listview.iml" filepath="$PROJECT_DIR$/lession_12_listview/lession_12_listview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/practice/practice.iml" filepath="$PROJECT_DIR$/practice/practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lession_12_practice/lession_12_practice.iml" filepath="$PROJECT_DIR$/lession_12_practice/lession_12_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lession_13_menus/lession_13_menus.iml" filepath="$PROJECT_DIR$/lession_13_menus/lession_13_menus.iml" />
     </modules>
   </component>
 </project>
