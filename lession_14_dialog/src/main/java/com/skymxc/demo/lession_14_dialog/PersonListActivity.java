@@ -4,11 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +54,26 @@ public class PersonListActivity extends AppCompatActivity implements View.OnClic
         adapter = new MyAdapter(persons,this);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(itemClickLit);
+        lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.e("Tag","============onItemLongClick==========");
+                return false;
+            }
+        });
+
+//        lv.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+//            @Override
+//            public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
+//                contextMenu.setHeaderTitle("选择操作");
+//                contextMenu.add(Menu.NONE,R.id.item_remove,0,"删除");
+//                contextMenu.add(Menu.NONE,R.id.item_update,1,"修改");
+//            }
+//        });
+
+
+
+        registerForContextMenu(lv);
     }
 
     /**
@@ -92,7 +116,17 @@ public class PersonListActivity extends AppCompatActivity implements View.OnClic
         Person person = (Person) data.getSerializableExtra("person");
         int operate = data.getIntExtra("operate",RESPONSE_DEL);
         Log.e("Tag","=====REQUEST_Code====="+operate);
-        execute(operate,person);
+        switch (requestCode){
+            case REQUEST_ADD:
+                //新增
+                person.setId(persons.size());
+                adapter.addData(person);
+                break;
+            default:
+                execute(operate,person);
+                break;
+        }
+
         adapter.notifyDataSetChanged();
     }
 
@@ -104,6 +138,8 @@ public class PersonListActivity extends AppCompatActivity implements View.OnClic
     private void execute(int operate, Person person) {
         //获取adapter中的数据
         Person p = adapter.getItem((int)person.getId());
+
+
         switch (operate){
             case RESPONSE_DEL:
              //   Log.e("Tag","======DEL==是否包含："+persons.contains(person)+"=======id"+person.getId());
@@ -115,14 +151,39 @@ public class PersonListActivity extends AppCompatActivity implements View.OnClic
                 p.setBirthTime(person.getBirthTime());
                 Log.e("Tag","=====UPDATE=====");
                 break;
-            case REQUEST_ADD:
-                //新增
-                person.setId(persons.size());
-                adapter.addData(person);
-                break;
         }
 
     }
 
 
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        Log.e("Tag","============onContextItemSelected==========");
+      AdapterView.AdapterContextMenuInfo info= (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+       Person person = adapter.getItem( info.position);
+    //    Toast.makeText(this,person.getName(),Toast.LENGTH_SHORT).show();
+        switch (item.getItemId()){
+            case R.id.item_remove:
+            //    Toast.makeText(this,"item_remove",Toast.LENGTH_SHORT).show();
+                adapter.delData(person);
+                adapter.notifyDataSetChanged();
+
+                break;
+            case R.id.item_update:
+                Toast.makeText(this,"item_update",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this,PersonOperateActivity.class);
+                intent.putExtra("person",person);
+                intent.putExtra("operate",REQUEST_UPDATE);
+                startActivityForResult(intent,REQUEST_UPDATE);
+                break;
+        }
+        return true;
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        menu.setHeaderTitle("选择操作");
+        menu.add(Menu.NONE,R.id.item_remove,0,"删除");
+        menu.add(Menu.NONE,R.id.item_update,1,"修改");
+    }
 }

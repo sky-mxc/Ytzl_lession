@@ -29,7 +29,7 @@ public class PersonOperateActivity extends AppCompatActivity implements View.OnC
      * 3 删除
      */
 
-    private  int operate =0;
+    private  int operate =1;
     private TextView tvTtile ;
     private ImageView img_action;
     private Person person;
@@ -40,7 +40,7 @@ public class PersonOperateActivity extends AppCompatActivity implements View.OnC
     private static final int ACTION_UPDATE=2;
     private static final int ACTION_SEE=4;
     private static final int ACTION_DEL=3;
-    private static final int ACTION_ADD=0;
+    private static final int ACTION_ADD=1;
 
 
     @Override
