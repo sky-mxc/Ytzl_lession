@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lession_14_dialog</string>
+    <string name="boy">boy</string>
+    <string name="other">other</string>
+    <string name="girl">girl</string>
+</resources>

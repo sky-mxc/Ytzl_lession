@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDialog" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="windowNoTitle">true</item>
+        <!-- 设置宽度的最大 最小值-->
+        <item name="android:windowMinWidthMajor">300dp</item>
+        <item name="android:windowMinWidthMinor">200dp</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--practice-->
+
+    <style name="headerPanel" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="header_sub_center">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="header_sub_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxWidth">30dp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+</resources>

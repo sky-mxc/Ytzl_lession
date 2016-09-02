@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="姓名："/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/lblname"/>
+
+    <TextView
+        android:id="@+id/lblbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/lblname"
+        android:text="生日："/>
+    <TextView
+        android:id="@+id/birth_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lblbirth"
+        android:layout_toRightOf="@id/lblbirth"/>
+
+    <TextView
+        android:id="@+id/birth_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/birth_date"
+        android:layout_alignBottom="@id/birth_date"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

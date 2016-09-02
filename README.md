@@ -14,3 +14,6 @@ ytzl代码
 - lession_10_json     Android中原生json的操作，fastjson的使用 Gson的使用
 - lession_11_parse_xml   Android中的 sax解析 和 pull解析
 - lession_12_listview  ListView的使用 SimplAdapter,BaseAdapter的使用 
+- lession_13_menus	Android中的菜单的使用 OptionMenu，ContextMenu，PopupMenu，PopupWindow"
+- lession_14_dialog	android 中的对话框 AlertDialog，ProgressDialog，DatePickerDialog，TimePickerDialog"
+

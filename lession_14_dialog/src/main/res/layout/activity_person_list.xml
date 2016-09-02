@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lession_14_dialog.PersonListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingRight="10dp">
+        <TextView
+            android:id="@+id/title"
+            android:text="名录"
+           style="@style/header_sub_center"/>
+
+        <ImageView
+            android:id="@+id/action_Image"
+            android:src="@mipmap/add"
+            style="@style/header_sub_right"/>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ccc"
+        android:dividerHeight="2dp"></ListView>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:text="右上角添加数据"/>
+</LinearLayout>

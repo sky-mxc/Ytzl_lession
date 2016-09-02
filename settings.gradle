@@ -1,1 +1,1 @@
-include  ':lession_10_json', ':lession_11_parse_xml', ':lession_12_listview', ':lession_13_menus', ':lession_12_practice'
+include    ':lession_14_dialog'
