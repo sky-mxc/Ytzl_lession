@@ -143,7 +143,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         dialog.show();
         //进度必须在show之后起作用
         //dialog.setProgress(50);
-
         //延时执行Runnable 100毫秒后
         button.postDelayed(new Runnable() {
             @Override
@@ -200,6 +199,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
      * 单选 对话框
      */
     private void createSingledialog() {
+        //参数0 是指定默认的选中项
         new AlertDialog.Builder(this)
                 .setSingleChoiceItems(new String[]{"single0","single1","single2"},0,onClickLit)
                 .show();
@@ -232,6 +232,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                     Toast.makeText(MainActivity.this,edit.getText().toString(),Toast.LENGTH_SHORT).show();
                 }
             }
+            Log.e("Tag","====="+i+"======");
             switch (i){
                 case DialogInterface.BUTTON_NEGATIVE:
                     break;
@@ -240,6 +241,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 case DialogInterface.BUTTON_POSITIVE:
                     break;
             }
+
         }
     };
 

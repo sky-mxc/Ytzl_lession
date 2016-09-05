@@ -16,4 +16,6 @@ ytzl代码
 - lession_12_listview  ListView的使用 SimplAdapter,BaseAdapter的使用 
 - lession_13_menus	Android中的菜单的使用 OptionMenu，ContextMenu，PopupMenu，PopupWindow"
 - lession_14_dialog	android 中的对话框 AlertDialog，ProgressDialog，DatePickerDialog，TimePickerDialog"
+- lession_15_data_storage	数据存储 SharedPreferences SDCard  内部存储
+
 

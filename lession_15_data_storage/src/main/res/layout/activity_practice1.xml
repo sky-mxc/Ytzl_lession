@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lession_15_data_storage.Practice1Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/lbl_scale"
+            android:text="缩放"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="10dp"/>
+        <SeekBar
+            android:id="@+id/sk_scale"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:max="100"
+            android:progress="2"
+            android:layout_toRightOf="@id/lbl_scale"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:progressDrawable="@drawable/progress_selector"/>
+
+        <TextView
+            android:id="@+id/tv_scale_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lbl_scale"
+            android:layout_below="@id/sk_scale"
+            android:text="0.5"/>
+           <TextView
+            android:id="@+id/tv_scale_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/sk_scale"
+               android:layout_marginRight="10dp"
+            android:layout_below="@id/sk_scale"
+            android:text="2"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

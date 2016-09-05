@@ -107,8 +107,9 @@ public class InfoActivity  extends AppCompatActivity{
                 }else{
                     //图库
                     intent= new Intent(Intent.ACTION_GET_CONTENT);
-                    intent.setType("image/*");
-                    intent.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                  //  intent.setType("image/*");
+                 //   intent.setData();
+                    intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,"image/*");
                     startActivityForResult(intent,REQUEST_PICTURE);
                 }
 
