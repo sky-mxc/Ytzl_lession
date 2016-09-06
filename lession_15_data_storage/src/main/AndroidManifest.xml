@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.skymxc.demo.lession_15_data_storage">
+    package="com.skymxc.demo.lession_15_data_storage">·
 
     <!-- 文件系统的操作权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
@@ -18,15 +18,15 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".BitmapActivity"></activity>
         <activity android:name=".PracticeMainActivity">
-
-        </activity>
-        <activity android:name=".PracticeInfoActivity" />
-        <activity android:name=".Practice1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".PracticeInfoActivity" />
+        <activity android:name=".Practice1Activity">
+
         </activity>
     </application>
 

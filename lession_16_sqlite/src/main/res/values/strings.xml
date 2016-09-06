@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SQLite</string>
+
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+        <item>其他</item>
+    </string-array>
+</resources>

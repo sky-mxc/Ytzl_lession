@@ -32,8 +32,8 @@
             android:progress="2"
             android:layout_toRightOf="@id/lbl_scale"
             android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:progressDrawable="@drawable/progress_selector"/>
+            android:layout_alignParentTop="true"/>
+        <!--android:progressDrawable="@drawable/progress_selector"-->
 
         <TextView
             android:id="@+id/tv_scale_min"
@@ -51,6 +51,7 @@
             android:layout_below="@id/sk_scale"
             android:text="2"/>
     </RelativeLayout>
+
 
 
 </LinearLayout>

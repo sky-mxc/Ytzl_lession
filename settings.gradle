@@ -1,2 +1,2 @@
-include ':lession_15_data_storage',":practice"
+include ':lession_15_data_storage', ':lession_16_sqlite', ":practice"
 include ":lession_13_menus", ':lession_14_dialog'

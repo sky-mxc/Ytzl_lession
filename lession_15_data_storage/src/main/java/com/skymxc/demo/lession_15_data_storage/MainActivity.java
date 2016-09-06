@@ -63,11 +63,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
              * sp.contains()；//查看是否包含某key
              *  edit.apply(); 将缓存改变 并且开一个 线程去提交
              */
-
+            boolean isContains= sp.contains("push");    //查看是否包含 某key
             //获取编辑器对象 用于存储数据
             SharedPreferences.Editor edit = sp.edit();
             edit.putBoolean("push",b);      //存储数据
             edit.commit();              //提交数据
+            edit.apply();   //让原来的数据和修改过的值保持一致 并开一个线程去commit
 
 
         }
@@ -96,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void readOut() {
         String state = Environment.getExternalStorageState();
+
         //是否可度
         try {
             if (state.equals(Environment.MEDIA_MOUNTED)||state.equals(Environment.MEDIA_MOUNTED_READ_ONLY)){
