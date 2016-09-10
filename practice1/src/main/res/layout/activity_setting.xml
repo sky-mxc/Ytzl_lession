@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/word_bg"
+    tools:context="com.skymxc.demo.practice1.SettingActivity">
+
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/Header">
+        <TextView
+            android:id="@+id/title"
+            android:text="设置"
+            style="@style/HeaderTitle"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/SettingItem">
+        <TextView
+            android:text="检查更新"
+            style="@style/SettingItemLeft"/>
+        <TextView
+            android:id="@+id/ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v10"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/check"
+            android:textColor="?attr/font_color"/>
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/jiantou"
+            android:clickable="true"
+            android:onClick="onClick"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+    <RelativeLayout
+        style="@style/SettingItem">
+
+        <TextView
+            style="@style/SettingItemLeft"
+            android:text="夜间模式"/>
+
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_bg"
+            android:layout_centerVertical="true"
+            android:minHeight="30dp"
+            android:maxHeight="30dp"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+
+</LinearLayout>
