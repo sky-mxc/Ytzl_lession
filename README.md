@@ -17,5 +17,7 @@ ytzl代码
 - lession_13_menus	Android中的菜单的使用 OptionMenu，ContextMenu，PopupMenu，PopupWindow"
 - lession_14_dialog	android 中的对话框 AlertDialog，ProgressDialog，DatePickerDialog，TimePickerDialog"
 - lession_15_data_storage	数据存储 SharedPreferences SDCard  内部存储
-
+- lession_16_sqlite		sqlite数据库的使用
+- practice1		日间模式切换的Demo
+- practicenetwork_volley	volley 框架的使用
 

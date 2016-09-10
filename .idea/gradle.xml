@@ -9,21 +9,21 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_13_menus" />
+            <option value="$PROJECT_DIR$/lession_12_listview" />
             <option value="$PROJECT_DIR$/lession_14_dialog" />
-            <option value="$PROJECT_DIR$/lession_15_data_storage" />
-            <option value="$PROJECT_DIR$/lession_16_sqlite" />
-            <option value="$PROJECT_DIR$/practice" />
+            <option value="$PROJECT_DIR$/lession_5_style" />
+            <option value="$PROJECT_DIR$/practice1" />
+            <option value="$PROJECT_DIR$/practicenetwork_volley" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_13_menus" />
+            <option value="$PROJECT_DIR$/lession_12_listview" />
             <option value="$PROJECT_DIR$/lession_14_dialog" />
-            <option value="$PROJECT_DIR$/lession_15_data_storage" />
-            <option value="$PROJECT_DIR$/lession_16_sqlite" />
-            <option value="$PROJECT_DIR$/practice" />
+            <option value="$PROJECT_DIR$/lession_5_style" />
+            <option value="$PROJECT_DIR$/practice1" />
+            <option value="$PROJECT_DIR$/practicenetwork_volley" />
           </set>
         </option>
       </GradleProjectSettings>

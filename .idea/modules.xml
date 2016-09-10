@@ -3,11 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lession_13_menus/lession_13_menus.iml" filepath="$PROJECT_DIR$/lession_13_menus/lession_13_menus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lession_12_listview/lession_12_listview.iml" filepath="$PROJECT_DIR$/lession_12_listview/lession_12_listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lession_14_dialog/lession_14_dialog.iml" filepath="$PROJECT_DIR$/lession_14_dialog/lession_14_dialog.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lession_15_data_storage/lession_15_data_storage.iml" filepath="$PROJECT_DIR$/lession_15_data_storage/lession_15_data_storage.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lession_16_sqlite/lession_16_sqlite.iml" filepath="$PROJECT_DIR$/lession_16_sqlite/lession_16_sqlite.iml" />
-      <module fileurl="file://$PROJECT_DIR$/practice/practice.iml" filepath="$PROJECT_DIR$/practice/practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lession_5_style/lession_5_style.iml" filepath="$PROJECT_DIR$/lession_5_style/lession_5_style.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice1/practice1.iml" filepath="$PROJECT_DIR$/practice1/practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practicenetwork_volley/practicenetwork_volley.iml" filepath="$PROJECT_DIR$/practicenetwork_volley/practicenetwork_volley.iml" />
     </modules>
   </component>
 </project>
