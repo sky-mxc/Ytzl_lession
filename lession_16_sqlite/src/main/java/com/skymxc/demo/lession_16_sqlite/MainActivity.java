@@ -18,9 +18,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private DBHelper dbHelper;
-   private EditText etId;
-   private EditText etName;
-   private EditText etPhone;
+    private EditText etId;
+    private EditText etName;
+    private EditText etPhone;
     private Spinner spGender;
     private ListView lv;
     private String phone;
@@ -178,7 +178,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-
     }
 
 
@@ -196,6 +195,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(!TextUtils.isEmpty(name)){
             sb.append(" and name = ?");
             params.add(name);
+
         }
         if(!TextUtils.isEmpty(phone)){
             sb.append(" and phone = ?");

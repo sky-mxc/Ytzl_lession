@@ -3,6 +3,7 @@ package com.skymxc.demo.lession_16_sqlite;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by sky-mxc
@@ -24,10 +25,15 @@ public class PracticeDBHelper extends SQLiteOpenHelper{
         sb.append("name varchar(20) ,");
         sb.append("url varchar(20) )");
         db.execSQL(sb.toString());
+        Log.e("Tag","======onCreate=============");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
 
+    }
+
+    public static void clearData(String table,SQLiteDatabase db){
+        db.execSQL("delete from "+table +" where 1=1");
     }
 }

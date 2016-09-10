@@ -52,7 +52,5 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public static void clearData(String table,SQLiteDatabase db){
-        db.execSQL("delete from "+table);
-    }
+
 }

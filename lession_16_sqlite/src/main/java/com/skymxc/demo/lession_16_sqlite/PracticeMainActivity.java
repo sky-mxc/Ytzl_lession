@@ -23,7 +23,7 @@ public class PracticeMainActivity extends AppCompatActivity {
     private NewstAdapter  nAdapter;
     private List<Cat> cats;
     private List<News> news;
-    private DBHelper dbHelper;
+    private PracticeDBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,8 @@ public class PracticeMainActivity extends AppCompatActivity {
      * 初始化控件 DBHelper
      */
     private void init(){
-        dbHelper = new DBHelper(this);
+        dbHelper = new PracticeDBHelper(this);
+
         news = new ArrayList<>();
         cats = new ArrayList<>();
         //TODO  为spinner 和ListView 绑定 adapter 设置监听器
@@ -110,7 +111,7 @@ public class PracticeMainActivity extends AppCompatActivity {
     private void saveCat(List<Cat> cats){
         //TODO 将之前的数据删除   新的类型 存入数据库
         SQLiteDatabase db= dbHelper.getWritableDatabase();
-        DBHelper.clearData("cat",db);
+        PracticeDBHelper.clearData("cat",db);
         String sql = "insert into cat values(?,?,?,?,?,?)";
         for (Cat cat :cats){
             db.execSQL(sql,new String[]{cat.getCatid()+"",cat.getCatname(),cat.getIconurl(),cat.getSort()+"",cat.getName(),cat.getUrl()});
