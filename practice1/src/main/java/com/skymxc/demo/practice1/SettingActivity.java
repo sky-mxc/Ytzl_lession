@@ -53,7 +53,7 @@ public class SettingActivity extends AppCompatActivity  implements View.OnClickL
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 checked =b;
                 Log.e("Tag","===========onCheckedChanged============"+b);
-                //TODO 保存到SharedPreferences
+                // 保存到SharedPreferences
 
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putBoolean("checked",b);

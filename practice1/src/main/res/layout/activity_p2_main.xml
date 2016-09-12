@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.practice1.P2MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="列表"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/add_show"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/add"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+
+            android:layout_gravity="right|center_vertical"/>
+
+        <CheckBox
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ccc"
+        android:dividerHeight="1dp"></ListView>
+
+</LinearLayout>
