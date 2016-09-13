@@ -21,5 +21,5 @@ ytzl代码
 - practice1		日间模式切换的Demo 使用 重绘 activity 设置 theme的方式， P2 ListView 中点击删除按钮删除，ListView 实现 全选 单选
 - practicenetwork_volley	volley 框架的使用
 - practice2       日夜间模式的切换 使用 自带的 AppCompatDelegate  API设置
--
+- lession_17_content_provider  ContentProvider  ContentResolver 的简单使用
 

@@ -31,7 +31,6 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/cb_choose"
         android:focusable="false"
-        android:focusableInTouchMode="false"
         android:text="删除"/>
 
 </RelativeLayout>
