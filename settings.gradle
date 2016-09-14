@@ -1,2 +1,2 @@
-include ':practice1', ':practice2', ':lession_17_content_provider', ":lession_5_style"
+include ':practice1', ':practice2', ':lession_17_content_provider', ':lession_19_animation', ":lession_5_style"
 include ":lession_12_listview", ':lession_14_dialog'

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    缩放动画
+    fromXScale      X 反向的缩放倍数
+    to              到达的缩放倍数
+    pivot           缩放重心点的设置
+-->
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="1"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toXScale="0.1"
+    android:fromYScale="1"
+    android:toYScale="0.5"
+    android:duration="2000">
+
+</scale>

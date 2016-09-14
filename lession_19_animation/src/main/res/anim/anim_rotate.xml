@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 旋转
+    fromDegrees   开始角度
+    to          结束角度
+    旋转方式：三种
+           绝对 位置  使用 pivotX   pivotY确定位置 px   100px  绝对 位置 ；
+          （2种） 相对位置   使用 pivotX   pivotY  使用 自身高度的 %  50%=自身的50%  ；   50%p =父容器的50%
+-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:duration="2000"
+    android:pivotX="50%"
+    android:pivotY="50%">
+
+</rotate>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+       <item name="android:windowAnimationStyle">@style/Anim</item>
+    </style>
+
+    <style name="Anim">
+        <!--让所有 的activity都按照这个 -->
+        <item name="android:windowExitAnimation">@anim/anim_exit</item>
+        <item name="android:windowEnterAnimation">@anim/anim_enter</item>
+    </style>
+
+</resources>

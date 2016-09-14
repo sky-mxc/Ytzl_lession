@@ -22,4 +22,5 @@ ytzl代码
 - practicenetwork_volley	volley 框架的使用
 - practice2       日夜间模式的切换 使用 自带的 AppCompatDelegate  API设置
 - lession_17_content_provider  ContentProvider  ContentResolver 的简单使用
+- lession_19_animation		帧动画 ，补间动画 
 
