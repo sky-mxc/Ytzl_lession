@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.skymxc.demo.lesson_20_animator.MainActivity">
 
-    <TextView
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/value_animator"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:text="值动画器"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/object_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对象动画器"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/set_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动画集合"
+        android:onClick="onClick"/>
+
+    <CheckBox
+        android:id="@+id/tegether"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同时播放"/>
+
+
+</LinearLayout>
