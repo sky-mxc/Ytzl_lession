@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lession_19_animation.practice.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="账号"/>
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="密码"/>
+
+
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_margin="10dp"
+        android:focusableInTouchMode="true"
+        android:onClick="onClick"
+        android:background="@drawable/drawable_bt_bg"/>
+
+    <TextView
+        android:id="@+id/to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="马上注册"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:onClick="onClick"/>
+</LinearLayout>

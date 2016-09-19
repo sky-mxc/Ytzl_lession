@@ -2,6 +2,7 @@ package com.skymxc.demo.lession_19_animation;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -21,11 +23,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private RotateAnimation rotateAnimation;
     private ScaleAnimation scaleAnimation;
     private TranslateAnimation translateAnimation;
+    private ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         text  = (TextView) findViewById(R.id.text);
+        image = (ImageView) findViewById(R.id.image);
+        image.setClickable(true);
+        image.setOnClickListener(this);
         initAlphaAnimation();
         initRotateAnimation();
         initScaleAnimation();
@@ -93,6 +99,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.to_transition:
                 in= new Intent(MainActivity.this, ayoutTransitionActivity.class);
                 startActivity(in);
+                break;
+            case R.id.image:
+                Drawable drawable = image.getBackground();
+               //
+                // AnimatedVectorDrawable v =
                 break;
         }
     }

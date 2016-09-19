@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="200"
+    android:viewportHeight="200"
+    android:width="200dp"
+    android:height="200dp">
+
+    <!--  矢量动画
+        pathData    x y
+            大小  绝对  移动到某个点
+             小写 相对
+            L 线  划线
+            h 水平线
+            v  竖直线
+    -->
+    <path android:strokeWidth="1"
+        android:strokeColor="#f00"
+        android:pathData="M25,25 L100,100 L25,175"
+        android:name="top"/>
+
+   <path android:strokeWidth="1"
+        android:strokeColor="#00ff5d"
+        android:pathData="M175,25 L100 100  L175,175"
+       android:name="bottom"/>
+
+    <!--<path android:strokeWidth="1"-->
+        <!--android:strokeColor="#00ff5d"-->
+        <!--android:pathData="M50,100 C"/>-->
+
+
+</vector>
+
