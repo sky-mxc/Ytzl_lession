@@ -9,25 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_12_listview" />
-            <option value="$PROJECT_DIR$/lession_14_dialog" />
-            <option value="$PROJECT_DIR$/lession_17_content_provider" />
-            <option value="$PROJECT_DIR$/lession_19_animation" />
-            <option value="$PROJECT_DIR$/lession_5_style" />
-            <option value="$PROJECT_DIR$/practice1" />
-            <option value="$PROJECT_DIR$/practice2" />
+            <option value="$PROJECT_DIR$/lesson_20_animator" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lession_12_listview" />
-            <option value="$PROJECT_DIR$/lession_14_dialog" />
-            <option value="$PROJECT_DIR$/lession_17_content_provider" />
-            <option value="$PROJECT_DIR$/lession_19_animation" />
-            <option value="$PROJECT_DIR$/lession_5_style" />
-            <option value="$PROJECT_DIR$/practice1" />
-            <option value="$PROJECT_DIR$/practice2" />
+            <option value="$PROJECT_DIR$/lesson_20_animator" />
           </set>
         </option>
       </GradleProjectSettings>
