@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lesson_21_ActiveAndroid_DB</string>
+    <string-array name="grads">
+        <item>请选择</item>
+        <item>优</item>
+        <item>良</item>
+        <item>中</item>
+        <item>差</item>
+    </string-array>
+</resources>
