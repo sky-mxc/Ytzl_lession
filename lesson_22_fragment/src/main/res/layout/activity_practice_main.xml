@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_practice_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lesson_22_fragment.practice.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/line"></FrameLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/menu_bottom"
+        android:background="#ccc"/>
+
+    <RadioGroup
+        android:id="@+id/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/msg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/selector_msg_top"
+            android:checked="true"
+            android:text="消息"
+            android:textColor="@color/selector_menu_item"
+            android:textSize="17sp"/>
+        <RadioButton
+            android:id="@+id/person"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/selector_menu_item"
+            android:drawableTop="@drawable/selector_person_top"
+            android:text="联系人"/>
+        <RadioButton
+            android:id="@+id/active"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/selector_menu_item"
+            android:drawableTop="@drawable/selector_active_top"
+            android:text="活动"/>
+    </RadioGroup>
+
+</RelativeLayout>

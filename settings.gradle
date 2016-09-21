@@ -1,2 +1,2 @@
-include ':lesson_20_animator', ':lesson_21_activeandroid_db'
+include ':lesson_21_activeandroid_db', ':lesson_22_fragment'
 

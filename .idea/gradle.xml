@@ -9,17 +9,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_20_animator" />
             <option value="$PROJECT_DIR$/lesson_21_activeandroid_db" />
+            <option value="$PROJECT_DIR$/lesson_22_fragment" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_20_animator" />
-            <option value="$PROJECT_DIR$/lesson_21_activeandroid_db" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

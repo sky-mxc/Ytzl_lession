@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/menu_top_msg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <RadioButton
+            android:id="@+id/message"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/selector_message_bg"
+            android:checked="true"
+            android:text="消息"
+            android:textColor="@color/selector_menu_top_item"/>
+        <RadioButton
+            android:id="@+id/phone"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:text="电话"
+            android:background="@drawable/selector_tell_bg"
+            android:gravity="center"
+            android:textColor="@color/selector_menu_top_item"/>
+
+    </RadioGroup>
+
+    <fragment
+        android:id="@+id/fragment_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.skymxc.demo.lesson_22_fragment.practice.CommonFragment"/>
+    
+</LinearLayout>

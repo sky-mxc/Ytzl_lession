@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_20_animator/lesson_20_animator.iml" filepath="$PROJECT_DIR$/lesson_20_animator/lesson_20_animator.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_21_activeandroid_db/lesson_21_activeandroid_db.iml" filepath="$PROJECT_DIR$/lesson_21_activeandroid_db/lesson_21_activeandroid_db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_22_fragment/lesson_22_fragment.iml" filepath="$PROJECT_DIR$/lesson_22_fragment/lesson_22_fragment.iml" />
     </modules>
   </component>
 </project>

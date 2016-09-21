@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
       //  Student student = Model.load(Student.class,1);
 
 
-        //不添加列 查询全部  from（Model）   execute() 查询全部list
 
 
         //条件查询  全部是字段名 并不是 类中的属性名
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         //两边连接
         //  students= new Select().from(Student.class).as("a").join(Student.class).as("b").on("a.tid = b.tid").where("a.Id=? and b.name like ?",1,"%张%").execute();
 
-
+        //不添加列 查询全部  from（Model）   execute() 查询全部list
        List<Student> students = new Select().from(Student.class).execute();
         Log.e("Tag","=====loadData()=========="+students.size());
         adapter.addAll(students);
