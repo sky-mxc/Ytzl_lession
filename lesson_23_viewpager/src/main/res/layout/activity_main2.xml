@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skymxc.demo.lesson_23_viewpager.practice.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/line"></FrameLayout>
+
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_above="@+id/rg"/>
+
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="页面1"/>
+
+       <RadioButton
+           android:id="@+id/page2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+           android:button="@null"
+           android:drawableTop="@mipmap/ic_launcher"
+           android:text="页面2"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

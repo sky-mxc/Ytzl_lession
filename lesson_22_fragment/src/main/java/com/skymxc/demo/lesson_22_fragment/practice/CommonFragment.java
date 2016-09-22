@@ -116,7 +116,6 @@ public class CommonFragment extends Fragment {
 //        tv.setText(null);
         String text = getArguments().getString("msg");
         Log.e("CommonFragment","=setText====="+text+"=====TextView:"+tv);
-
         if (tv!=null){
             tv.setText(text);
         }

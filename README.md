@@ -26,4 +26,5 @@ ytzl代码
 - lesson_20_animator        属性动画 ：valueAnimator，objectAnimator ；制作SD卡的文件浏览器
 - lesson_21_activeandroid_db    activeandroid 框架的使用
 - lesson_22_fragment       fragment 使用 动态加载 静态加载 嵌套 Fragment
+- lesson_23_viewpager        viewpager 远程加载新闻 ，pagerAdapter ，FragmentPagerAdapter FragmentStatePagerAdapter
 
