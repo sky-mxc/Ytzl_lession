@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lesson_23_viewpager" />
+            <option value="$PROJECT_DIR$/lesson_24_tab" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

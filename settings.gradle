@@ -1,2 +1,2 @@
-include  ':lesson_23_viewpager'
+include ':lesson_23_viewpager', ':lesson_24_tab'
 
