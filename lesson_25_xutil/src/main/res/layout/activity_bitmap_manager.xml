@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bitmap_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lesson_25_xutil.BitmapManagerActivity">
+
+    <Button
+        android:id="@+id/load_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="loadFile"
+        android:textAllCaps="false"
+        android:onClick="click"/>
+
+    <Button
+        android:id="@+id/bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bind"
+        android:textAllCaps="false"
+        android:onClick="click"/>
+
+    <Button
+        android:id="@+id/load_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="load Drawable"
+        android:textAllCaps="false"
+        android:onClick="click"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"/>
+
+</LinearLayout>

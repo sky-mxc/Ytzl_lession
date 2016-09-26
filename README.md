@@ -27,4 +27,5 @@ ytzl代码
 - lesson_21_activeandroid_db    activeandroid 框架的使用
 - lesson_22_fragment       fragment 使用 动态加载 静态加载 嵌套 Fragment
 - lesson_23_viewpager        viewpager 远程加载新闻 ，pagerAdapter ，FragmentPagerAdapter FragmentStatePagerAdapter
-
+- lesson_24_tab    tab标签效果的几种实现
+- lesson_25_xutil       xutil 框架 viewInject  DBManager BitmapManger Http
