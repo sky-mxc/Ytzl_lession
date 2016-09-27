@@ -43,8 +43,6 @@ public class HttpManagerActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.get:
                 RequestParams rp = new RequestParams("http://mapi.univs.cn/mobile/index.php?controller=content&action=category&app=mobile&catid=11&page=1");
-
-
                 rp.setConnectTimeout(10000);
                 http().get(rp, new Callback.CommonCallback<String>() {
                     @Override
@@ -76,7 +74,6 @@ public class HttpManagerActivity extends AppCompatActivity {
                     List<KeyValue> kvs = new ArrayList<>();
                     kvs.add(new KeyValue("u.uid","50"));
 //                    RequestBody body = new UrlEncodedParamsBody(kvs,"utf-8");
-
                     //文件上传
                     File file = new File(Environment.getExternalStorageDirectory()+"/Download/dog.jpg");
                     kvs.add(new KeyValue("upphoto",new FileBody(file,"image/*")));

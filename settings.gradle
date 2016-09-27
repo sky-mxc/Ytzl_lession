@@ -1,2 +1,2 @@
-include ':lesson_24_tab', ':lesson_25_xutil'
+include ':lesson_24_tab', ':lesson_25_xutil', ':lesson_26_actionbar'
 
