@@ -11,9 +11,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.ShareActionProvider;
 import android.util.Log;
+import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private CheckBox cbSetIcon;
     private CheckBox cbShowHome;
     private CheckBox cbShowUp;
+    private Button btShow;
+    private Button btHide;
 
     private   ActionBar actionBar;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -35,7 +39,15 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-         actionBar= getSupportActionBar();
+        initView();
+
+
+
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void initView() {
+        actionBar= getSupportActionBar();
 
         actionBar.setBackgroundDrawable(getDrawable(R.drawable.shape_actionbar_bg)); //ActionBar背景
         /**
@@ -57,7 +69,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         cbShowActionBar = (CheckBox) findViewById(R.id.show_actionbar);
         cbShowTitle = (CheckBox) findViewById(R.id.show_title);
         cbShowUp = (CheckBox) findViewById(R.id.show_as_up);
+        btHide = (Button) findViewById(R.id.hide_action_mode);
+        btShow = (Button) findViewById(R.id.show_action_mode);
 
+        btHide.setOnClickListener(this);
+        btShow.setOnClickListener(this);
         cbSetTitle.setOnCheckedChangeListener(this);
         cbSetIcon.setOnCheckedChangeListener(this);
         cbSetSubTitle.setOnCheckedChangeListener(this);
@@ -66,7 +82,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         cbShowActionBar.setOnCheckedChangeListener(this);
         cbShowUp.setOnCheckedChangeListener(this);
         cbShowTitle.setOnCheckedChangeListener(this);
-
         //添加 Tab
 //        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 //        //must add  TabListener
@@ -83,7 +98,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 //                return false;
 //            }
 //        });
-
     }
 
     /**
@@ -176,11 +190,75 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         return true;
     }
 
+    private ActionMode actionMode ;
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this,SecondActivity.class);
-        startActivity(intent);
+        switch (v.getId()){
+            case R.id.to:
+                Intent intent = new Intent(this,SecondActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.show_action_mode:
+                if (actionMode==null) {
+                    actionMode = v.startActionMode(callback);
+                    actionMode.setTitle("actionMode 啊");
+                    actionMode.setSubtitle("subTitle啊");
+                }
+                break;
+            case R.id.hide_action_mode:
+                actionMode.finish();
+                break;
+        }
+
     }
+
+    private ActionMode.Callback callback = new ActionMode.Callback(){
+
+        /**
+         * ActionMode 创建时
+         * 不返回true 不会显示 ActionMode
+         * @param mode
+         * @param menu
+         * @return true
+         */
+        @Override
+        public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+            menu.add("嗯哼");
+            return true;
+        }
+
+        /**
+         * 准备 actionMode的时候
+         * @param mode
+         * @param menu
+         * @return
+         */
+        @Override
+        public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+            return false;
+        }
+
+        /**
+         * 菜单项点击事件
+         * 返回true标识已经处理了
+         * @param mode
+         * @param item
+         * @return
+         */
+        @Override
+        public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+            return false;
+        }
+
+        /**
+         * 销毁时调用
+         * @param mode
+         */
+        @Override
+        public void onDestroyActionMode(ActionMode mode) {
+            actionMode=null;
+        }
+    };
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

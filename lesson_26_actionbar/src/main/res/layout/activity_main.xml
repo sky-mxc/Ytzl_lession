@@ -71,5 +71,17 @@
         android:text="show actionbar"
        android:checked="true"/>
 
+    <Button
+        android:id="@+id/show_action_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show actionMode"/>
+
+    <Button
+        android:id="@+id/hide_action_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hide actionMode"/>
+
 
 </LinearLayout>
