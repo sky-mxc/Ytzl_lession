@@ -9,8 +9,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_24_tab" />
-            <option value="$PROJECT_DIR$/lesson_25_xutil" />
             <option value="$PROJECT_DIR$/lesson_26_actionbar" />
           </set>
         </option>
