@@ -9,12 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".Practice0Activity">
+        <activity android:name=".Practice0Activity"></activity>
+        <activity android:name=".Practice1Activity" />
+        <activity android:name=".Practice2Activity" />
+        <activity android:name=".Practice3Activity">
 
         </activity>
-        <activity android:name=".Practice1Activity"></activity>
-        <activity android:name=".Practice2Activity"></activity>
-        <activity android:name=".Practice3Activity">
+        <activity android:name=".Practice4Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_pressed="true">
+    <!--按下-->
+
+            <shape>
+                <solid android:color="#b31395"/>
+
+                <corners android:radius="10dp"/>
+                <size android:height="40dp"
+                    android:width="20dp"/>
+            </shape>
+
+    </item>
+
+    <item android:state_focused="false">
+        <shape>
+            <solid android:color="#362d35"/>
+
+            <corners android:radius="10dp"/>
+            <size android:height="40dp"
+                android:width="20dp"/>
+        </shape>
+
+    </item>
+    <item >
+
+           <shape>
+               <solid android:color="#362d35"/>
+
+               <corners android:radius="10dp"/>
+               <size android:height="40dp"
+                   android:width="20dp"/>
+           </shape>
+
+    </item>
+</selector>
