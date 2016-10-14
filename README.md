@@ -22,7 +22,7 @@ ytzl代码
 - practicenetwork_volley	volley 框架的使用
 - practice2       日夜间模式的切换 使用 自带的 AppCompatDelegate  API设置
 - lession_17_content_provider  ContentProvider  ContentResolver 的简单使用
-- lession_19_animation		帧动画 ，补间动画
+- lession_19_animation		帧动画 ，补间动画 ListView的item出场动画，Activity的出现和消失动画
 - lesson_20_animator        属性动画 ：valueAnimator，objectAnimator ；制作SD卡的文件浏览器
 - lesson_21_activeandroid_db    activeandroid 框架的使用
 - lesson_22_fragment       fragment 使用 动态加载 静态加载 嵌套 Fragment
@@ -30,3 +30,5 @@ ytzl代码
 - lesson_24_tab    tab标签效果的几种实现
 - lesson_25_xutil       xutil 框架 viewInject  DBManager BitmapManger Http
 - lesson_26_actionbar  ActionBar
+- lesson_27_handler   handler的简单使用
+- lession_28_broadcast  广播 本地广播

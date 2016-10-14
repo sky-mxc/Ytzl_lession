@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skymxc.demo.lession_28_bradcast">
+    <!--接受启动完成的权限-->
+    <permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <permission android:name="android.permission.RECEIVE_SMS"/>
+    <permission android:name="android.permission.SEND_SMS"/>
+
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receive.NetworkReceive">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"></action>
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name=".receive.MyReceiver">
+            <intent-filter android:priority="500">
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <!--屏幕关闭和点亮 静态注册是无法接受到的 ，只能动态-->
+
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+
+                <action android:name="com.mxc.example.broadcast.normal.test"/>
+                <action android:name="com.mxc.example.broadcast.order.test"/>
+                <action android:name="com.mxc.example.broadcast.sync.test"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receive.MsgReceiver" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

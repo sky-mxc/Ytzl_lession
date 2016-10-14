@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -83,11 +84,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         cbShowUp.setOnCheckedChangeListener(this);
         cbShowTitle.setOnCheckedChangeListener(this);
         //添加 Tab
-//        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-//        //must add  TabListener
-//        actionBar.addTab(actionBar.newTab().setText("TAB1").setTabListener(tabListener),true); //添加TAB并设置默认选中项
-//        actionBar.addTab(actionBar.newTab().setText("Tab2").setTabListener(tabListener));
-//        actionBar.addTab(actionBar.newTab().setText("Tab3").setTabListener(tabListener));
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        //must add  TabListener
+        actionBar.addTab(actionBar.newTab().setText("TAB1").setTabListener(tabListener),true); //添加TAB并设置默认选中项
+        actionBar.addTab(actionBar.newTab().setText("Tab2").setTabListener(tabListener));
+        actionBar.addTab(actionBar.newTab().setText("Tab3").setTabListener(tabListener));
 
         //List
 //        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
@@ -103,23 +104,23 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     /**
      * Tab 监听
      */
-//    private ActionBar.TabListener tabListener = new ActionBar.TabListener() {
-//
-//        @Override
-//        public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
-//
-//        }
-//
-//        @Override
-//        public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
-//
-//        }
-//
-//        @Override
-//        public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
-//
-//        }
-//    };
+    private ActionBar.TabListener tabListener = new ActionBar.TabListener() {
+
+        @Override
+        public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+        }
+
+        @Override
+        public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+        }
+
+        @Override
+        public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+        }
+    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
