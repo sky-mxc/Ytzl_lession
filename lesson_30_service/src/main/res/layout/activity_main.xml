@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lesson_30_service.MainActivity">
+
+
+
+    <Button
+        android:id="@+id/start_Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start service"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
+
+   <Button
+        android:id="@+id/stop_Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop service"
+        android:textAllCaps="false"
+       android:onClick="onClick"/>
+      <Button
+        android:id="@+id/bind_Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bind service"
+        android:textAllCaps="false"
+          android:onClick="onClick"/>
+
+   <Button
+        android:id="@+id/unbind_Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="unbind service"
+        android:textAllCaps="false"
+       android:onClick="onClick"/>
+  <Button
+        android:id="@+id/to_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to startService download"
+        android:textAllCaps="false"
+       android:onClick="onClick"/>
+  <Button
+        android:id="@+id/to_bind_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to bindService download"
+        android:textAllCaps="false"
+       android:onClick="onClick"/>
+
+</LinearLayout>
