@@ -70,38 +70,24 @@ public class Student implements Parcelable{
         dest.writeString(name);
         dest.writeString(phone);
     }
+    public void readFromParcel(Parcel source){
+        id =  source.readInt();
+        name = source.readString();
+        phone = source.readString();
+    }
 
-//    @Override
-//    public int describeContents() {
-//        return 0;
-//    }
-//
-//    @Override
-//    public void writeToParcel(Parcel dest, int flags) {
-//        //序列化
-//        dest.writeInt(id);
-//        dest.writeString(name);
-//        dest.writeString(phone);
-//    }
-//
-//    /**
-//     * 返序列化
-//     * 签名格式必须是以下格式
-//     */
-//    public static Creator<Student>   CREATOR  = new Creator<Student>() {
-//        @Override
-//        public Student createFromParcel(Parcel source) {
-//            Student student = new Student();
-//            //读取顺序要和写入顺序一致
-//            student.id = source.readInt();
-//            student.name = source.readString();
-//            student.phone = source.readString();
-//            return student;
-//        }
-//
-//        @Override
-//        public Student[] newArray(int size) {
-//            return new Student[size];
-//        }
-//    };
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj==this) return  true;
+
+        if (obj instanceof  Student){
+            Student stu = (Student) obj;
+            if (stu.id==this.id && stu.name.equals(this.name) && stu.phone.equals(stu.phone)){
+
+                return true;
+            }
+        }
+        return super.equals(obj);
+    }
 }
