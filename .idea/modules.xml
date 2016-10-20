@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_22_fragment/lesson_22_fragment.iml" filepath="$PROJECT_DIR$/lesson_22_fragment/lesson_22_fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_29_notification/lesson_29_notification.iml" filepath="$PROJECT_DIR$/lesson_29_notification/lesson_29_notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson_30_service/lesson_30_service.iml" filepath="$PROJECT_DIR$/lesson_30_service/lesson_30_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_31_aidl_test/lesson_31_aidl_test.iml" filepath="$PROJECT_DIR$/lesson_31_aidl_test/lesson_31_aidl_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_32_desgin_widget/lesson_32_desgin_widget.iml" filepath="$PROJECT_DIR$/lesson_32_desgin_widget/lesson_32_desgin_widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lsson_31_aidl/lsson_31_aidl.iml" filepath="$PROJECT_DIR$/lsson_31_aidl/lsson_31_aidl.iml" />
     </modules>
   </component>
 </project>
