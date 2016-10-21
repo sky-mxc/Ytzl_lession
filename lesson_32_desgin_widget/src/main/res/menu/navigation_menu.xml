@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:title="我的微博"
+            android:icon="@mipmap/wuzi2"
+            android:checked="true"/>
+
+        <item android:title="我的收藏"
+            android:icon="@mipmap/mnu"/>
+
+        <item android:title="我的话题"
+            android:icon="@mipmap/mqu"/>
+
+
+
+
+    <item android:title="账户信息">
+        <menu>
+            <item android:title="我的资料"
+                android:icon="@mipmap/a8a"/>
+            <item android:title="账户安全"
+                android:icon="@mipmap/ac7"/>
+            <item android:title="我的设置"
+                android:icon="@mipmap/mnv"/>
+        </menu>
+    </item>
+
+</menu>

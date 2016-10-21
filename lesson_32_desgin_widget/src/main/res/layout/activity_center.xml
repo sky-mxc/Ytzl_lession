@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.skymxc.demo.lesson_32_desgin_widget.CenterActivity">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/navigation_menu"
+        app:itemIconTint="@color/selector_menu_item_tint"
+        app:itemTextColor="@color/selector_menu_item_tint"></android.support.design.widget.NavigationView>
+
+</LinearLayout>

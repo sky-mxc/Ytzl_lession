@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/lan0"
+        android:layout_gravity="left">
+
+        <include layout="@layout/activity_center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/lan0"
+        android:layout_gravity="right">
+
+        <include layout="@layout/activity_center"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <android.support.design.widget.TextInputLayout
+           android:id="@+id/text_input_repwd"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Password"/>
+       </android.support.design.widget.TextInputLayout>
+      <android.support.design.widget.TextInputLayout
+           android:id="@+id/text_input_pwd"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint=" new Password"
+               android:inputType="textPassword"/>
+       </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Login"
+            android:textAllCaps="false"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/mnu"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

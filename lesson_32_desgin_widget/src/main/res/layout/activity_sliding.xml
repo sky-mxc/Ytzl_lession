@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/activity_center"/>
+    </FrameLayout>
+    <!--CollapsingToolbarLayout  必须包含一个 ToolBar-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--
+                自动将 包裹的内容作为 标题栏的内容
+
+            -->
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="@color/colorPrimary"
+                app:title="title"
+                app:expandedTitleGravity="bottom|center_horizontal">
+
+                <!--contentScrim  遮盖颜色 遮盖 收缩上去的 视图
+                collapsedTitleTextAppearance  收缩时 颜色 渲染设置
+                expandedTitleTextAppearance  展开式expandedTitleGravity 位置
+
+                -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#ccc"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/ic_launcher"/>
+                </FrameLayout>
+
+                <!--
+                layout_collapseMode  滚动模式
+                parallax  视差 模式
+                pin   固定
+                -->
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:navigationIcon="@drawable/abc_ic_ab_back_material"
+                    app:layout_collapseMode="pin"/>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+<!--  app:layout_behavior="@string/appbar_scrolling_view_behavior"  解决滑动冲突-->
+       <android.support.v7.widget.RecyclerView
+           app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           android:id="@+id/recycler"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>

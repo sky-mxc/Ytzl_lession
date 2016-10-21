@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingBottom="50dp"
+    android:paddingTop="50dp"
+
+    android:background="#536453">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/s"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三的微博"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"/>
+       <TextView
+            android:id="@+id/intr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三，张是张三的张，三是张三的三；"
+           android:textSize="16sp"
+           android:maxLines="2"/>
+    </LinearLayout>
+
+
+</LinearLayout>
