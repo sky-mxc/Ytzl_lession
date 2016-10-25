@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson_34_refreshFramework</string>
+    <string-array name="header">
+        <item>loading</item>
+        <item>waiting</item>
+    </string-array>
+</resources>
