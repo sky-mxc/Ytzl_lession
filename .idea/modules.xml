@@ -3,12 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_29_notification/lesson_29_notification.iml" filepath="$PROJECT_DIR$/lesson_29_notification/lesson_29_notification.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_30_service/lesson_30_service.iml" filepath="$PROJECT_DIR$/lesson_30_service/lesson_30_service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_31_aidl_test/lesson_31_aidl_test.iml" filepath="$PROJECT_DIR$/lesson_31_aidl_test/lesson_31_aidl_test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_32_desgin_widget/lesson_32_desgin_widget.iml" filepath="$PROJECT_DIR$/lesson_32_desgin_widget/lesson_32_desgin_widget.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_33_web_view_js/lesson_33_web_view_js.iml" filepath="$PROJECT_DIR$/lesson_33_web_view_js/lesson_33_web_view_js.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lsson_31_aidl/lsson_31_aidl.iml" filepath="$PROJECT_DIR$/lsson_31_aidl/lsson_31_aidl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_35_touch_event/lesson_35_touch_event.iml" filepath="$PROJECT_DIR$/lesson_35_touch_event/lesson_35_touch_event.iml" />
     </modules>
   </component>
 </project>

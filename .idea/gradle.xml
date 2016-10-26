@@ -9,12 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_29_notification" />
-            <option value="$PROJECT_DIR$/lesson_30_service" />
-            <option value="$PROJECT_DIR$/lesson_31_aidl_test" />
-            <option value="$PROJECT_DIR$/lesson_32_desgin_widget" />
-            <option value="$PROJECT_DIR$/lesson_33_web_view_js" />
-            <option value="$PROJECT_DIR$/lsson_31_aidl" />
+            <option value="$PROJECT_DIR$/lesson_35_touch_event" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

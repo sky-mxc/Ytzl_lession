@@ -33,3 +33,9 @@ ytzl代码
 - lesson_27_handler   handler的简单使用
 - lession_28_broadcast  广播 本地广播
 - lesson_29_notification  通知
+- lesson_30_service  Service服务
+- lesson_31_aidl_test  进程间通信 AIDL测试
+- lesson_32_desgin_widgt  关于5.0之后新加入的一些控件 窗帘控件，导航控件 ，Snake，
+- lesson_33_web_view_js  WebView 的使用 与js的交互
+- lesson_34_refreshframework  三种刷新框架的使用 SwipeRefreshLayout、PullToRefresh/Ultra PullToRefresh
+- lesson_35_touch_event   事件分发机制理解 ,多点触控，滑动速度测量，GestureDetector 手势处理，实现双击等
