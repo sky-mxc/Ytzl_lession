@@ -92,11 +92,6 @@ public class TextView1 extends TextView {
             
         }
 
-
-
-
-
-
         boolean f = super.onTouchEvent(event);
         Log.i(TAG, "onTouchEvent: 触摸事件 end;result="+f);
         return f;

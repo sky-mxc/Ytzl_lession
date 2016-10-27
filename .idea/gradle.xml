@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lesson_35_touch_event" />
+            <option value="$PROJECT_DIR$/lesson_36_view_override" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
