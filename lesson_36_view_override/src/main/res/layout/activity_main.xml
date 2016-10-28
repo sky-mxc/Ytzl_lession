@@ -14,5 +14,5 @@
         android:padding="10dp"
         android:src="@mipmap/top"
         circle:out_color="@android:color/holo_green_light"
-        circle:out_width="2dp"/>
+        circle:out_width="5dp"/>
 </RelativeLayout>

@@ -59,7 +59,7 @@ public class CircleImageView extends ImageView {
     }
 
     private void drawShape() {
-        ////        paint.setARGB(100,240,0,200);
+//        //        paint.setARGB(100,240,0,200);
 //        paint.setAlpha(50);
 //        //画笔样式  ；填充：Style.FILL ;边框Style.STROKE;填充+边框： Style.FILL_AND_STROKE
 //        paint.setStyle(Paint.Style.STROKE);

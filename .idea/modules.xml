@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_35_touch_event/lesson_35_touch_event.iml" filepath="$PROJECT_DIR$/lesson_35_touch_event/lesson_35_touch_event.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_36_view_override/lesson_36_view_override.iml" filepath="$PROJECT_DIR$/lesson_36_view_override/lesson_36_view_override.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_37_view_override/lesson_37_view_override.iml" filepath="$PROJECT_DIR$/lesson_37_view_override/lesson_37_view_override.iml" />
     </modules>
   </component>
 </project>
