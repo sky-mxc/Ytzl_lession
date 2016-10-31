@@ -41,3 +41,4 @@ ytzl代码
 - lesson_35_touch_event   事件分发机制理解 ,多点触控，滑动速度测量，GestureDetector 手势处理，实现双击等
 - lesson_36_view_override 重绘view  通过 onDraw() canvas 和 paint的详细用法 自定义圆形ImageView
 - lesson_37_view_override  自定义控件 MeasureSpec，onMeasure()测量，onLayout布局 让控件支持margin
+- lesson_38_baidumap    使用百度地图SDK
