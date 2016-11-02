@@ -27,6 +27,9 @@ public class MLocation {
         //注册一个位置监听
         client.registerLocationListener(locLis);
         initOption(client);
+
+        //一秒一下的扫描时间，可通过字方法请求位置数据
+        client.requestLocation();
     }
 
     /**
@@ -41,6 +44,7 @@ public class MLocation {
         option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);       //定位模式
         option.setScanSpan(1000*5);         //设置扫描间隔  在1000ms以上
         client.setLocOption(option);
+
     }
 
     //位置监听

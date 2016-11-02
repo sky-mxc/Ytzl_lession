@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lesson_38_baidumap" />
+            <option value="$PROJECT_DIR$/lesson_39_override_view" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -33,4 +33,31 @@
         android:text="显示热力图"
         android:layout_alignParentRight="true"
        android:layout_below="@id/show_traffic"/>
+
+    <Button
+        android:id="@+id/my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我在哪"
+        android:onClick="onClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="输入关键字"/>
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:onClick="onClick"/>
+    </LinearLayout>
 </RelativeLayout>
