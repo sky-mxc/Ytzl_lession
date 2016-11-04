@@ -34,10 +34,11 @@ public class TextView1 extends TextView {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         Log.i(TAG, "dispatchTouchEvent: 事件分发 start");
-        boolean f =super.dispatchTouchEvent(ev);
-        Log.i(TAG, "dispatchTouchEvent: 事件分发 end  ;result="+f);
-        return f;
+//        boolean f =super.dispatchTouchEvent(ev);
+//        Log.i(TAG, "dispatchTouchEvent: 事件分发 end  ;result="+f);
+        return super.dispatchTouchEvent(ev);
     }
+
 
     VelocityTracker vt;
 
@@ -92,9 +93,9 @@ public class TextView1 extends TextView {
             
         }
 
-        boolean f = super.onTouchEvent(event);
-        Log.i(TAG, "onTouchEvent: 触摸事件 end;result="+f);
-        return f;
+//        boolean f = super.onTouchEvent(event);
+//        Log.i(TAG, "onTouchEvent: 触摸事件 end;result="+f);
+        return super.onTouchEvent(event);
     }
 
 

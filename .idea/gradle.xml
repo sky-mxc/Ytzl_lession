@@ -9,8 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_38_baidumap" />
-            <option value="$PROJECT_DIR$/lesson_39_override_view" />
+            <option value="$PROJECT_DIR$/lesson_41_jni" />
+            <option value="$PROJECT_DIR$/lesson_41_jni_demo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

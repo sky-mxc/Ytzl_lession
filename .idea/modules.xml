@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_38_baidumap/lesson_38_baidumap.iml" filepath="$PROJECT_DIR$/lesson_38_baidumap/lesson_38_baidumap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_39_override_view/lesson_39_override_view.iml" filepath="$PROJECT_DIR$/lesson_39_override_view/lesson_39_override_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_41_jni/lesson_41_jni.iml" filepath="$PROJECT_DIR$/lesson_41_jni/lesson_41_jni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_41_jni_demo/lesson_41_jni_demo.iml" filepath="$PROJECT_DIR$/lesson_41_jni_demo/lesson_41_jni_demo.iml" />
     </modules>
   </component>
 </project>

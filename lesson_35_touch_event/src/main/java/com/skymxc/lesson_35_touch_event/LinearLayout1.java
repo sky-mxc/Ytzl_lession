@@ -32,9 +32,9 @@ public class LinearLayout1 extends LinearLayout {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         Log.i(TAG, "dispatchTouchEvent: 事件分发 start");
-        boolean f =super.dispatchTouchEvent(ev);
-        Log.i(TAG, "dispatchTouchEvent: 事件分发 end  ;result="+f);
-        return f;
+//        boolean f =super.dispatchTouchEvent(ev);
+//        Log.i(TAG, "dispatchTouchEvent: 事件分发 end  ;result="+f);
+        return super.dispatchTouchEvent(ev);
     }
 
     /**
@@ -45,9 +45,9 @@ public class LinearLayout1 extends LinearLayout {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         Log.i(TAG, "onInterceptTouchEvent: 触摸事件拦截  start" );
-        boolean f = super.onInterceptTouchEvent(ev);
-        Log.i(TAG, "onInterceptTouchEvent: 触摸事件拦截  end; result="+f);
-        return f;
+//        boolean f = super.onInterceptTouchEvent(ev);
+//        Log.i(TAG, "onInterceptTouchEvent: 触摸事件拦截  end; result="+f);
+        return false;
     }
 
     /**
@@ -58,8 +58,8 @@ public class LinearLayout1 extends LinearLayout {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.i(TAG, "onTouchEvent: 触摸事件处理 start");
-        boolean f = super.onTouchEvent(event);
-        Log.i(TAG, "onTouchEvent: 触摸事件处理 end result="+f);
-        return f;
+//        boolean f = super.onTouchEvent(event);
+//        Log.i(TAG, "onTouchEvent: 触摸事件处理 end result="+f);
+        return super.onTouchEvent(event);
     }
 }

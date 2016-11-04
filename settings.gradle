@@ -1,4 +1,4 @@
-include ':lesson_38_baidumap', ':lesson_39_override_view'
+include ':lesson_41_jni', ':lesson_41_jni_demo'
 
 
 

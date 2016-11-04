@@ -87,11 +87,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
      */
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.i(TAG, "dispatchTouchEvent: 事件分发");
-        if (super.dispatchTouchEvent(ev)){
-            return true;
-        }
-        return gd.onTouchEvent(ev);
+        Log.i(TAG, "dispatchTouchEvent: ");
+      return  super.dispatchTouchEvent(ev);
     }
 
 
@@ -115,4 +112,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 break;
         }
     }
+
+
 }
