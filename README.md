@@ -42,3 +42,7 @@ ytzl代码
 - lesson_36_view_override 重绘view  通过 onDraw() canvas 和 paint的详细用法 自定义圆形ImageView
 - lesson_37_view_override  自定义控件 MeasureSpec，onMeasure()测量，onLayout布局 让控件支持margin
 - lesson_38_baidumap    使用百度地图SDK
+- lesson_39_override_view  重写 view  测量 ，布局 paint canvas
+- lesson_40_screen_suit  屏幕适配
+- lesson_41_jni  jni
+- lesson_42_http  网络访问 okhttp,volley xutils3,

@@ -41,13 +41,13 @@ public class SecondActivity extends AppCompatActivity {
         //设置上次更新头部时间对应的key
         ptrFrameLayout.setLastUpdateTimeHeaderKey("key");
 
-        ptrFrameLayout.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                //自动刷新
-                ptrFrameLayout.autoRefresh();
-            }
-        },100);
+//        ptrFrameLayout.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                //自动刷新
+//                ptrFrameLayout.autoRefresh();
+//            }
+//        },100);
 
 
 

@@ -9,8 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_41_jni" />
-            <option value="$PROJECT_DIR$/lesson_41_jni_demo" />
+            <option value="$PROJECT_DIR$/lesson_42_http" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
