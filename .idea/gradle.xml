@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lesson_42_http" />
+            <option value="$PROJECT_DIR$/lesson_43_fresco" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
