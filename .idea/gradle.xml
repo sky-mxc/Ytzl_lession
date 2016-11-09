@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lesson_42_http" />
             <option value="$PROJECT_DIR$/lesson_43_fresco" />
+            <option value="$PROJECT_DIR$/lesson_44_media" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
