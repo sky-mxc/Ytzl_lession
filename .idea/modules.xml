@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_42_http/lesson_42_http.iml" filepath="$PROJECT_DIR$/lesson_42_http/lesson_42_http.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_43_fresco/lesson_43_fresco.iml" filepath="$PROJECT_DIR$/lesson_43_fresco/lesson_43_fresco.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_44_media/lesson_44_media.iml" filepath="$PROJECT_DIR$/lesson_44_media/lesson_44_media.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_45_jpush/lesson_45_jpush.iml" filepath="$PROJECT_DIR$/lesson_45_jpush/lesson_45_jpush.iml" />
     </modules>
   </component>
 </project>

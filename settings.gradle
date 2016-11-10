@@ -1,4 +1,4 @@
-include ':lesson_42_http', ':lesson_43_fresco', ':lesson_44_media'
+include ':lesson_45_jpush'
 
 
 

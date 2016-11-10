@@ -9,9 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_42_http" />
-            <option value="$PROJECT_DIR$/lesson_43_fresco" />
-            <option value="$PROJECT_DIR$/lesson_44_media" />
+            <option value="$PROJECT_DIR$/lesson_45_jpush" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
