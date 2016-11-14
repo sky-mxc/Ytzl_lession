@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_45_jpush" />
+            <option value="$PROJECT_DIR$/lesson_47_encrypt_decrypt" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
