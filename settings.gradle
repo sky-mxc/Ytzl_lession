@@ -1,4 +1,4 @@
-include ':lesson_47_encrypt_decrypt'
+include ':lesson_47_encrypt_decrypt', ':lesson_48_retrofit_eventbus'
 
 
 
