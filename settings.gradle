@@ -1,4 +1,4 @@
-include ':lesson_47_encrypt_decrypt', ':lesson_48_retrofit_eventbus'
+include ':lesson_49_alipay', ':alipay_demo'
 
 
 

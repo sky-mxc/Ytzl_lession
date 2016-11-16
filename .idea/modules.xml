@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lession.iml" filepath="$PROJECT_DIR$/Lession.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_47_encrypt_decrypt/lesson_47_encrypt_decrypt.iml" filepath="$PROJECT_DIR$/lesson_47_encrypt_decrypt/lesson_47_encrypt_decrypt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lesson_48_retrofit_eventbus/lesson_48_retrofit_eventbus.iml" filepath="$PROJECT_DIR$/lesson_48_retrofit_eventbus/lesson_48_retrofit_eventbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alipay_demo/alipay_demo.iml" filepath="$PROJECT_DIR$/alipay_demo/alipay_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson_49_alipay/lesson_49_alipay.iml" filepath="$PROJECT_DIR$/lesson_49_alipay/lesson_49_alipay.iml" />
     </modules>
   </component>
 </project>

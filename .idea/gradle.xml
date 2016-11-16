@@ -9,8 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lesson_47_encrypt_decrypt" />
-            <option value="$PROJECT_DIR$/lesson_48_retrofit_eventbus" />
+            <option value="$PROJECT_DIR$/alipay_demo" />
+            <option value="$PROJECT_DIR$/lesson_49_alipay" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
